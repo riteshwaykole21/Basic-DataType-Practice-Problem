@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Services;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,6 +13,7 @@ namespace basicDataTypes
         {
             Console.WriteLine("1 :Enter Three Lettter");
             Console.WriteLine("2 : Display Trangular Of Width");
+            Console.WriteLine("3 : Enter A Two Number");
             Console.WriteLine("Enter a Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -23,6 +25,10 @@ namespace basicDataTypes
                 case 2:
                     Sharp sharp = new Sharp();
                     sharp.Using();
+                    break;
+                case 3:
+                    Opration opration = new Opration();
+                    opration.Taskes();
                     break;
             }
             Console.ReadLine();
