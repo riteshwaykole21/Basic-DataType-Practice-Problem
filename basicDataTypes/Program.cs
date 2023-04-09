@@ -11,6 +11,7 @@ namespace basicDataTypes
         static void Main(string[] args)
         {
             Console.WriteLine("1 :Enter Three Lettter");
+            Console.WriteLine("2 : Display Trangular Of Width");
             Console.WriteLine("Enter a Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -18,6 +19,10 @@ namespace basicDataTypes
                 case 1:
                     Display display = new Display();
                     display.Them();
+                    break;
+                case 2:
+                    Sharp sharp = new Sharp();
+                    sharp.Using();
                     break;
             }
             Console.ReadLine();
