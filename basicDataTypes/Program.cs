@@ -17,6 +17,7 @@ namespace basicDataTypes
             Console.WriteLine("4 : Enter a Radius Of Circle");
             Console.WriteLine("5 :Display Certain Funtion");
             Console.WriteLine("6 : Speed Of Kilometer Per Hour");
+            Console.WriteLine("7 : Calculate Surface And Volume");
             Console.WriteLine("Enter a Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -44,6 +45,10 @@ namespace basicDataTypes
                 case 6:
                     Kilometer kilometer = new Kilometer();
                     kilometer.Display();
+                    break;
+                case 7:
+                    Volume volume = new Volume();
+                    volume.Display();
                     break;
 
             }
