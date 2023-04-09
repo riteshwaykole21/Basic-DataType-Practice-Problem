@@ -16,6 +16,7 @@ namespace basicDataTypes
             Console.WriteLine("3 : Enter A Two Number");
             Console.WriteLine("4 : Enter a Radius Of Circle");
             Console.WriteLine("5 :Display Certain Funtion");
+            Console.WriteLine("6 : Speed Of Kilometer Per Hour");
             Console.WriteLine("Enter a Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -39,6 +40,10 @@ namespace basicDataTypes
                 case 5:
                     Certain certain = new Certain();
                     certain.Display();
+                    break;
+                case 6:
+                    Kilometer kilometer = new Kilometer();
+                    kilometer.Display();
                     break;
 
             }
